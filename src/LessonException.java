@@ -1,4 +1,4 @@
-public class LessonException extends Exception{
+public class LessonException extends Exception {
 
     //Результат суммирования элементов массива
     private int sum = 0;
