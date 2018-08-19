@@ -1,5 +1,3 @@
-package albakag.com.company;
-
 public class LessonException extends Exception{
 
     //Результат суммирования элементов массива
