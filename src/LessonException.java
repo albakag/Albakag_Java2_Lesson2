@@ -1,4 +1,4 @@
-public class LessonException extends Exception{
+public class LessonException extends Exception {
 
     //Результат суммирования элементов массива
     private int sum = 0;
@@ -9,13 +9,14 @@ public class LessonException extends Exception{
         for (int i = 0; i < arrayCheck.length; i++) {
             for (int j = 0; j < arrayCheck[i].length; j++) {
                 if (arrayCheck[j].length != arrayCheck.length)
+
                     throw new MyArraySizeException("Нессоответствие размера массива требуемым параметрам");
                 if (!isDigit(arrayCheck[i][j])) {
+
                     throw new MyArrayDataException("Тип элемента в строке - " + i + ", столбец - " + j + "\n"
                             + " не соответствует int, найдено - " + arrayCheck[i][j]);
                 } else
                     sum += Integer.parseInt(arrayCheck[i][j]);
-
             }
         }
         System.out.println("Сумма всех элементов массива равна - " + sum);
